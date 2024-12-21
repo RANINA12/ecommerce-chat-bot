@@ -2,7 +2,7 @@
   <img src="client/public/logo.png">
 </div>
 
-<h1> society manage</h1>
+<h1>  Chat Box  </h1>
 The "ChatterBox" project is an interactive Django-based web application that serves as a chatbot, designed to answer user queries with a simple and user-friendly interface, leveraging HTML, CSS, and Django's robust framework for seamless functionality.
 <br>
 
@@ -34,11 +34,11 @@ The ChatterBox project follows a modular MVC  architecture using Django. The fro
 <br>
 <h1>🚀 Getting Started</h1>
 To get started, download the zip file of the repository. Or use <br>
-<code>git clone https://github.com/ranina12/</code><br>
+<code>git clone  https://github.com/RANINA12/ecommerce-chat-bot</code><br>
 <ul> <li> <strong>Prerequisites:</strong><br> Ensure the following are installed on your device:<br> <ul> <li><code>Python</code> (latest stable version)</li> <li><code>MySQL 8</code></li> <li><code>MySQL Client</code></li> <li><code>Django</code></li> <li><code>django-environ</code></li> </ul> </li><br> <li> <strong>Step 1: Create a MySQL Database</strong><br> Open your MySQL client and create a new database:<br> <code>CREATE DATABASE your_database_name;</code> </li><br> <li> <strong>Step 2: Configure Environment Variables</strong><br> Create a <code>.env</code> file in the root directory of the project and add the following details:<br> <code>DB_NAME=your_database_name</code><br> <code>DB_USER=your_username</code><br> <code>DB_PASSWORD=your_password</code><br> <code>DB_HOST=localhost</code><br> <code>DB_PORT=3306</code> (or your custom port)<br> </li><br> <li> <strong>Step 3: Import the Database Dump</strong><br> Move to the project’s root directory (e.g., <code>project/</code>) where the <code>database_dump.sql</code> file is located.<br> Run the following command:<br> <code>mysql -u your_username -p your_database_name < database_dump.sql</code> </li><br> <li> <strong>Step 4: Apply Migrations</strong><br> Run the Django migration command:<br> <code>python manage.py migrate</code> </li><br> <li> <strong>Step 5: Run the Project</strong><br> Start the Django development server:<br> <code>python manage.py runserver</code> </li><br> <li> <strong>Step 6: Access the Application</strong><br> Open your browser and go to <code>http://127.0.0.1:8000/</code>.<br> Register yourself on the platform to start using the chatbot. </li><br> </ul>
 
 <h1>👉 How to use the site</h1>
-After Register or login you will see a web-page , then click on a purplish color circle . This will give you a Chat- Box where you can interact.
+After Register or login you will see a web-page , then click on a purplish color circle . This will give you a Chat- Box where you can interact.<br>
 <strong>You Can begin the Chat by sending Start </strong>
 <ul>
   <li>After Sending Start , The bot will display 4 option and send '1' '2' '3' '4' , according which service you want</li>
@@ -52,8 +52,8 @@ After Register or login you will see a web-page , then click on a purplish color
 
   
 </ul>
-<h1>👥 Our Team</h1>
-Our team consists of:
+<h1>👥 Creator </h1>
+
 
 <ul>
   <li><strong>Nikunj Bisani:</strong>
