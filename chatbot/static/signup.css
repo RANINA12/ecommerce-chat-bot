@@ -1,0 +1,114 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #004d40; /* Dark teal text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Teal gradient background */
+}
+
+/* Container for the form */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Spacing between form and other content */
+}
+
+/* Heading for the form */
+h2 {
+    color: #00796b; /* Medium teal */
+    margin-bottom: 20px;
+}
+
+/* Form fields and labels */
+form p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    color: #00796b; /* Teal label color */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #00796b; /* Teal border for the fields */
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #004d40; /* Dark text inside input fields */
+    outline: none;
+}
+
+/* Focus effect for input fields */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #004d40; /* Dark teal border on focus */
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: #00796b; /* Teal button background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004d40; /* Dark teal on hover */
+}
+
+/* Error message styling */
+.errorlist {
+    color: #b71c1c; /* Red color for errors */
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.errorlist li {
+    margin-bottom: 5px;
+}
+
+/* Link Styling for Login */
+div {
+    margin-top: 20px;
+    color: #00796b; /* Medium teal */
+}
+
+div a {
+    color: #00796b; /* Teal color for the login link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div a:hover {
+    text-decoration: underline;
+    color: #004d40; /* Darker teal on hover */
+}

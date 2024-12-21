@@ -1,0 +1,48 @@
+{% load static %}
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="{% static 'styles.css' %}">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      
+ </head>
+ <body>
+    <div id="center-text">
+        <h2>ChatBox UI</h2>
+        <p> At Present chatbox support only Samsung product </p>
+        <p>Message send and scroll to bottom enabled </p>
+        
+        <a  href="{%url 'logout'%}"><button><div class="logout-btn">logout</div></button></a>
+      </div> 
+    <div id="body"> 
+      {% comment %} Chat Box cricle to hide or raised chatbox {% endcomment %}
+    <div id="chat-circle" class="btn btn-raised">
+            <div id="chat-overlay"></div>
+            <i class="material-icons icon-position">arrow_upward</i>
+        </div>
+      
+      <div class="chat-box">
+        <div class="chat-box-header">
+           <div>ChatBot</div>
+          <span class="chat-box-toggle"><i class="material-icons icon-close">close</i></span>
+        </div>
+        <div class="chat-box-body">  <p id="pre-message">Hello i am here.....<br> To Begin Chat With me.<br>Message 'Start'.<p/>
+          <div class="chat-box-overlay">   
+          </div>
+          <div class="chat-logs">
+           
+          </div>
+        </div>
+        <div class="chat-input">      
+          
+            <input type="text" id="chat-input" placeholder="Send a message..."/>
+          <button onclick="sendMessage()" type="submit" class="chat-submit" id="chat-submit"><i class="material-icons send-material">send</i></button>
+               
+        </div>
+      </div>
+     <script src="{% static 'index.js' %}"></script>
+      </body>
+ </html>
