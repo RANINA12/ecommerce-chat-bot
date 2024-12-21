@@ -83,18 +83,33 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
+import environ
 
+env = environ.Env()
+environ.Env.read_env()
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chat_box',       # Name of your MySQL database
-        'USER': 'root',       # MySQL username
-        'PASSWORD': '123456',        # MySQL password
-        'HOST': 'localhost',                # Set to '127.0.0.1' if running locally
-        'PORT': '3306',                     # Default MySQL port
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST', default='127.0.0.1'),
+        'PORT': env('DB_PORT', default='3306'),
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'chat_box',       # Name of your MySQL database
+#         'USER': 'root',       # MySQL username
+#         'PASSWORD': '123456',        # MySQL password
+#         'HOST': 'localhost',                # Set to '127.0.0.1' if running locally
+#         'PORT': '3306',                     # Default MySQL port
+#     }
+# }
 
 
 # Password validation
